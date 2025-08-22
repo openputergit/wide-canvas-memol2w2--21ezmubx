@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simform - Digital Solutions</title>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #2D0A4D;
+        }
+        .gradient-bg {
+            background: linear-gradient(45deg, #2D0A4D 0%, #3B1164 100%);
+        }
+        .circle-animation {
+            animation: rotate 20s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="gradient-bg text-white">
+    <nav class="container mx-auto px-4 py-6">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgMEwzNSAyMEwyMCA0MEw1IDIwTDIwIDBaIiBmaWxsPSIjRjg0RDcwIi8+PC9zdmc+" alt="Simform Logo" class="h-8">
+                <span class="text-2xl font-bold ml-2 text-pink-500">SIMFORM</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-pink-500">Services</a>
+                <a href="#" class="hover:text-pink-500">Industries</a>
+                <a href="#" class="hover:text-pink-500">Case Studies</a>
+                <a href="#" class="hover:text-pink-500">Resources</a>
+                <a href="#" class="hover:text-pink-500">Why Simform</a>
+                <a href="#" class="hover:text-pink-500">About Us</a>
+            </div>
+            <button class="bg-pink-500 text-white px-6 py-2 rounded-lg hover:bg-pink-600 transition-colors">
+                Contact Us
+            </button>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-16">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+            <div class="lg:w-1/2 mb-12 lg:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Engineering the next best thing for the digital world
+                </h1>
+                <p class="text-xl mb-8 text-purple-200">
+                    Agile in mind, spirit, and speed
+                </p>
+                <button class="bg-pink-500 text-white px-8 py-3 rounded-lg hover:bg-pink-600 transition-colors text-lg">
+                    Book A Consultation Call
+                </button>
+            </div>
+            <div class="lg:w-1/2 relative">
+                <div class="circle-animation">
+                    <svg width="400" height="400" viewBox="0 0 400 400" class="w-full h-full">
+                        <path d="M200,0 A200,200 0 1,1 200,400 A200,200 0 1,1 200,0" fill="none" stroke="#9F7AEA" stroke-width="40"/>
+                        <path d="M200,80 A120,120 0 1,1 200,320 A120,120 0 1,1 200,80" fill="#2D0A4D"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20">
+            <p class="text-2xl text-center max-w-4xl mx-auto mb-16">
+                We consult, engineer, and design technology solutions to address complex business challenges with precision.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-purple-800 bg-opacity-50 p-8 rounded-xl hover:bg-opacity-70 transition-all">
+                    <h3 class="text-xl font-bold mb-4">Accelerate product development</h3>
+                </div>
+                <div class="bg-purple-800 bg-opacity-50 p-8 rounded-xl hover:bg-opacity-70 transition-all">
+                    <h3 class="text-xl font-bold mb-4">Adopt, optimize, modernize</h3>
+                </div>
+                <div class="bg-purple-800 bg-opacity-50 p-8 rounded-xl hover:bg-opacity-70 transition-all">
+                    <h3 class="text-xl font-bold mb-4">Build AI-ready data infrastructure</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
